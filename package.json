@@ -1,0 +1,25 @@
+{
+  "name": "woof",
+  "version": "1.0.0",
+  "description": "ci test",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx t3st"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devmachiine/woof.git"
+  },
+  "keywords": [
+    "woof",
+    "grrr",
+    "bark",
+    "barkk"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devmachiine/woof/issues"
+  },
+  "homepage": "https://github.com/devmachiine/woof#readme"
+}
