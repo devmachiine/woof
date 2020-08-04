@@ -29,7 +29,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci # - run: npm run build --if-present # n/a
     - run: npm test
-    - run: | 
-        node .github/actions/post-commit-status.js
-      with:
+    - run: node .github/actions/post-commit-status.js
+      env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
