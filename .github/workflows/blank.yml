@@ -42,6 +42,7 @@ jobs:
         #fail-bzz
 
     - name: Just do it
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: node .github/actions/post-commit-status.js
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
