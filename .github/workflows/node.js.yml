@@ -36,9 +36,10 @@ jobs:
     # Check out code using git
     - uses: actions/checkout@v2
     # Install Node 12
-    - uses: actions/setup-node@v1
-      with:
-        node-version: 12
-    - run: node .github/actions/post-commit-status.js
-      with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - run: echo DO NOTHING?
+    # - uses: actions/setup-node@v1
+    #   with:
+    #     node-version: 12
+    # - run: node .github/actions/post-commit-status.js
+    #   with:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
