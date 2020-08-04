@@ -12,11 +12,13 @@ const sha = process.env.GITHUB_SHA;
         repo,
         sha,
         state: "success",
+        // optional
         description: "all good",
-        context: "github action: post-commit-status.js"
+        context: "github action: post-commit-status.js",
+        target_url: "https://github.com/devmachiine/woof/actions?query=ci",
     });
 
-    console.log(`Commit ${sha} updated: ${data.html_url}`)
+    console.log(`Commit ${sha} updated: ${data.url}`)
 })();
 
 
