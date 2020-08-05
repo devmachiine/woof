@@ -10,7 +10,7 @@
     //   -d '{"state":"success", "description":"okay from curl"}'
 
     console.log(`env: repository ${process.env.GITHUB_REPOSITORY} `)
-    console.log(`env: token ${process.env.GITHUB_TOKEN} `)
+    // console.log(`env: token ${!!process.env.GITHUB_TOKEN.replace(/./g, '*')} `)
     console.log(`env: sha ${process.env.GITHUB_SHA} `)
 
     // El copy pastrami
